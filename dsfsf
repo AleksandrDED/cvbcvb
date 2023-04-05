@@ -16,19 +16,19 @@
         this->Nationality=Nationality;
      }
 
-     void Aging (int God) {
-         this->Age += God;
+     void Aging (int Evil) {
+         this->Age += Evil;
      }
      void Transgendere (int Gay) {
          this->Gender = Gay;
      }
-     void Handshake (Person* Wimen1) {
-         cout <<this->Name<< " rob " <<Wimen1->Name<<endl;
+     void nonhandshakable (Person* Wemen1) {
+         cout <<this->Name<< " shoot " <<Wemen1->Name<<endl;
      }
 
  };
  int main () {
-     Person* Man1 = new Person(180,70,1,35, "Arthur Morgan", "American");
-     Person* Wimen1 = new Person(140,30,0,14, "Mary Linton", "Asian");
-     Man1->Handshake(Wimen1);
+     Person* Man1 = new Person(185,70,1,28, "Marat", "Gypsy");
+     Person* Wemen1 = new Person(130,35,0,15, "Natasha", "Asian");
+     Man1->nonhandshakable(Wemen1);
  }
