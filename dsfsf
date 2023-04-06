@@ -4,10 +4,10 @@
 
  class Person {
      public:
-     int Height, Weight, Gender, Age;
-     string Name, Nationality;
+     int Height, Weight, Age;
+     string Name, Nationality, Gender;
 
-     Person (int Height, int Weight, int Gender, int Age, string Name, string Nationality){
+     Person (int Height, int Weight, string Gender, int Age, string Name, string Nationality){
         this->Height=Height;
         this->Weight=Weight;
         this->Gender=Gender;
@@ -18,9 +18,13 @@
 
      void Aging (int Evil) {
          this->Age += Evil;
+         cout << "postarel " <<Evil<<endl;
      }
-     void Transgendere (int Gay) {
-         this->Gender = Gay;
+     void Transgendere (string Pidr) {
+         this->Gender = Pidr;
+         cout << "teper ti - " <<Pidr<<endl;
+         
+         
      }
      void nonhandshakable (Person* Wemen1) {
          cout <<this->Name<< " shoot " <<Wemen1->Name<<endl;
@@ -28,7 +32,9 @@
 
  };
  int main () {
-     Person* Man1 = new Person(185,70,1,28, "Marat", "Gypsy");
-     Person* Wemen1 = new Person(130,35,0,15, "Natasha", "Asian");
+     Person* Man1 = new Person(185,70,Pacan,28, "Marat", "Gypsy");
+     Person* Wemen1 = new Person(130,35,Devka,15, "Natasha", "Asian");
      Man1->nonhandshakable(Wemen1);
+     Man1->Transgendere(0);
+     Man1->Aging(1000);
  }
